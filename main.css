@@ -1,0 +1,194 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif; /* Adiciona a fonte Roboto */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Verde claro */
+    color: #333;
+}
+
+header {
+    background-color: #2ecc71; /* Verde claro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.produtos-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.produto {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative; /* Adiciona posição relativa para os botões de remover */
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+.produto img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer; /* Adiciona cursor de mão ao passar por cima da imagem */
+}
+
+.produto h2, .produto p {
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+}
+
+.adicionar-produto-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #25d366; /* Verde do WhatsApp */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px; /* Diminuir o tamanho da fonte */
+}
+
+.adicionar-produto-button:hover {
+    background-color: #128C7E; /* Cor de destaque ao passar o mouse */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-conteudo {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #2ecc71; /* Verde claro */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.adicionar-produto-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.adicionar-produto-button:hover {
+    background-color: #128C7E;
+}
+
+.adicionar-produto-button::before {
+    content: "+";
+    font-size: 24px;
+}
+
+.whatsapp-button {
+    display: flex; /* Para centralizar verticalmente */
+    justify-content: center; /* Para centralizar horizontalmente */
+    align-items: center; /* Para centralizar verticalmente */
+    padding: 10px 20px; /* Diminuir o padding */
+    background-color: #f7fffa; /* Verde do WhatsApp */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0px; /* Reduzir o raio da borda */
+    transition: background-color 0.3s ease;
+    font-size: 14px; /* Diminuir o tamanho da fonte */
+}
+
+.whatsapp-button:hover {
+    background-color:  #f5f5f5; /* Cor de destaque ao passar o mouse */
+}
+
+
+.whatsapp-button img {
+    max-width: 50%; /* Garante que a imagem não ultrapasse a largura do botão */
+    max-height: 50%; /* Garante que a imagem não ultrapasse a altura do botão */
+}
+
+.sobre {
+    text-align: center; /* Centraliza o texto */
+    max-width: 800px; /* Define a largura máxima para evitar que o texto fique muito largo */
+    margin: 0 auto; /* Centraliza a seção na página */
+    padding: 20px; /* Adiciona um espaçamento interno */
+}
+
+.sobre h2 {
+    font-size: 24px; /* Tamanho da fonte do título */
+    color: #333; /* Cor do título */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+.sobre p {
+    font-size: 16px; /* Tamanho da fonte do texto */
+    color: #666; /* Cor do texto */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    margin-bottom: 15px; /* Adiciona espaço abaixo de cada parágrafo */
+}
